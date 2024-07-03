@@ -24,6 +24,7 @@
             --cor01: #141414;
             --cor02: #1F1F1F;
             --cor03: #C4F82A;
+            --cor04: #303030;
         }
 
         body {
@@ -31,7 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100dvw;
+            width: auto;
             height: 100dvh;
 
 
@@ -39,10 +40,9 @@
 
         .flex-content {
             background-color: var(--cor02);
-            width: 350px;
+            width: 300px;
             height: 500px;
-            border: 1px solid black;
-            border-radius: 15px;
+            border-radius: 10px;
             color: white;
             font-family: "Inter", sans-serif;
 
@@ -73,73 +73,72 @@
             font-weight: bolder;
         }
 
-        h2 {
-            font-size: 0.7em;
-            font-weight: bold;
-            padding-top: 8px;
-            color: var(--cor03);
-        }
 
-        p {
-            font-size: 1em;
+        p#skills {
+            font-size: 0.8em;
             font-weight: 300;
             padding-top: 20px;
             color: white;
             text-align: center;
         }
 
-        .buttons-container {
-            border: none;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: normal;
-            justify-content: center;
-            align-items: stretch;
-            margin-top: 30px;
-            gap: 5px;     
-        }
-
-        .buttons-content {
-            display: flex;
-            width: 250px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            background-color: #1F1F1F;
-            color: white;
-            border-radius: 10px;
-            padding: 12px 24px;
-            font-size: 13px;
+        p#location {
+            font-size: 0.8em;
             font-weight: bold;
-
-
+            color: var(--cor03);
+            padding-top: 10px;
+        }
+        
+        nav {
+            margin-top: 10px;
+            
         }
 
-        .buttons-content:hover {
-            cursor: pointer;
-            background-color: var(--cor03);
+        nav>a {
+            background-color: var(--cor04); 
+            color: white;
+            text-decoration: none; 
+            display: flex; 
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            border: 2px solid var(--cor04);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+           
+        } 
+
+        a:hover {
+            background-color: #C4F82A;
+            color: var(--cor02);
         }
 
     </style>
 </head>
 <body>
     <div class="flex-content">
+
         <div class="inside-card">
+
             <img src="social-links-profile-main/images/avatar-jessica.jpeg" alt="Profile Image">
             <h1>Jessica Randall</h1>
 
-            <h2>London, United Kingdom<h2>
+            <p id="location">London, United Kingdom</p>
 
-            <p>"Front-end developer and avid reader"</p>
+            <p id="skills">"Front-end developer and avid reader"</p>
             
-            <div class="buttons-container">
-                <button class="buttons-content">GitHub</button>
-                <button class="buttons-content">Frontend Mentor</button>
-                <button class="buttons-content">Linkedin</button>
-                <button class="buttons-content">Twitter</button>
-                <button class="buttons-content">Instagram</button>
-            </div>
+            <nav class="links-container">   
+
+                <a href="#" class="links">GitHub</a>
+                <a href="#" class="links">Frontend Mentor</a>
+                <a href="#" class="links">Linkedin</a>
+                <a href="#" class="links">Twitter</a>
+                <a href="#" class="links">Instagram</a>
+
+            </nav>
         </div>
     </div>
 </body>

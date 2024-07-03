@@ -39,7 +39,7 @@
 
         .flex-content {
             background-color: var(--cor02);
-            width: 300px;
+            width: 350px;
             height: 500px;
             border: 1px solid black;
             border-radius: 15px;
@@ -70,31 +70,55 @@
             font-size: 1.2em;
             font-weight: normal;
             padding-top: 15px;
+            font-weight: bolder;
         }
 
         h2 {
             font-size: 0.7em;
-            font-weight: normal;
+            font-weight: bold;
             padding-top: 8px;
             color: var(--cor03);
         }
 
         p {
             font-size: 1em;
-            font-weight: 100;
+            font-weight: 300;
             padding-top: 20px;
             color: white;
             text-align: center;
         }
 
-        .buttons {
+        .buttons-container {
+            border: none;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            align-content: stretch;
+            align-content: normal;
             justify-content: center;
             align-items: stretch;
-            
+            margin-top: 30px;
+            gap: 5px;     
+        }
+
+        .buttons-content {
+            display: flex;
+            width: 250px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #1F1F1F;
+            color: white;
+            border-radius: 10px;
+            padding: 12px 24px;
+            font-size: 13px;
+            font-weight: bold;
+
+
+        }
+
+        .buttons-content:hover {
+            cursor: pointer;
+            background-color: var(--cor03);
         }
 
     </style>
@@ -107,14 +131,14 @@
 
             <h2>London, United Kingdom<h2>
 
-            <p>"Front-end developer and avid reader</p>
+            <p>"Front-end developer and avid reader"</p>
             
-            <div class="buttons">
-                <button>GitHub</button>
-                <button>Frontend Mentor</button>
-                <button>Linkedin</button>
-                <button>Twitter</button>
-                <button>Instagram</button>
+            <div class="buttons-container">
+                <button class="buttons-content">GitHub</button>
+                <button class="buttons-content">Frontend Mentor</button>
+                <button class="buttons-content">Linkedin</button>
+                <button class="buttons-content">Twitter</button>
+                <button class="buttons-content">Instagram</button>
             </div>
         </div>
     </div>
